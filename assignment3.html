@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Assignment</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 15px auto;
+            width: 70%;
+            background: white;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 8px 12px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>JavaScript  Assignment 3</h2>
+
+<!-- Q1 -->
+<div class="box">
+    <h3>1. Remove States Starting with Vowels</h3>
+    <input type="text" id="q1input" placeholder="Enter states (e.g. Andhra,Bihar,Odisha)">
+    <button onclick="q1()">Run</button>
+    <p id="out1"></p>
+</div>
+<!-- Q2 -->
+<div class="box">
+    <h3>2. Reverse Sentence</h3>
+    <input type="text" id="q2input" placeholder="Enter sentence">
+    <button onclick="q2()">Run</button>
+    <p id="out2"></p>
+</div>
+
+<!-- Q3 -->
+<div class="box">
+    <h3>3. Modify Word (like INDIA → INDONESIA)</h3>
+    <input type="text" id="q3input" placeholder="Enter word (e.g. INDIA)">
+    <button onclick="q3()">Run</button>
+    <p id="out3"></p>
+</div>
+
+<!-- Q4 -->
+<div class="box">
+    <h3>4. Count Vowels & Consonants</h3>
+    <input type="text" id="q4input" placeholder="Enter text">
+    <button onclick="q4()">Run</button>
+    <p id="out4"></p>
+</div>
+
+<!-- Q5 -->
+<div class="box">
+    <h3>5. Replace Word</h3>
+    <input type="text" id="str" placeholder="Sentence"><br>
+    <input type="text" id="wrong" placeholder="Wrong word">
+    <input type="text" id="correct" placeholder="Correct word">
+    <button onclick="q5()">Run</button>
+    <p id="out5"></p>
+</div>
+
+<div class="box">
+    <h3>6. Numbers Greater Than 5</h3>
+    <input type="text" id="q6input" placeholder="Enter numbers (e.g. 1,2,3,9,10)">
+    <button onclick="q6()">Run</button>
+    <p id="out6"></p>
+</div>
+
+<!-- Q7 -->
+<div class="box">
+    <h3>7. Student Average</h3>
+    <input type="text" id="name" placeholder="Enter student name">
+    <input type="text" id="scores" placeholder="Enter scores (e.g. 80,70,60)">
+    <button onclick="q7()">Add Student</button>
+    <p id="out7"></p>
+</div>
+
+<!-- Q8 -->
+<div class="box">
+    <h3>8. Repeated Digit Sum</h3>
+    <input type="number" id="num" placeholder="Enter number">
+    <button onclick="q8()">Run</button>
+    <p id="out8"></p>
+</div>
+
+<!-- Q9 -->
+<div class="box">
+    <h3>9. Count Words</h3>
+    <input type="text" id="q9input" placeholder="Enter paragraph">
+    <button onclick="q9()">Run</button>
+    <p id="out9"></p>
+</div>
+
+<!-- Q10 -->
+<div class="box">
+    <h3>10. Reverse String</h3>
+    <input type="text" id="q10input" placeholder="Enter text">
+    <button onclick="q10()">Run</button>
+    <p id="out10"></p>
+</div>
+
+<!-- Q11 -->
+<div class="box">
+    <h3>11. Student Average (Multiple Students)</h3>
+
+    <input type="text" id="studentName" placeholder="Student name (e.g. student1)">
+    <input type="text" id="marks" placeholder="Marks (e.g. 44,56,87,97,37)">
+    
+    <button onclick="addStudent()">Add Student</button>
+    <button onclick="calculateAvg()">Calculate Averages</button>
+
+    <p id="out11"></p>
+</div>
+
+<script src="assignment3.js"></script>
+
+</body>
+</html>
