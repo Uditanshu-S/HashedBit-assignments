@@ -1,11 +1,10 @@
 import React from "react";
-//import Calculator from "./calculator";
-import Todo from "./ToDo";
+import IPLTable from "./IPLTable";
 
 function App() {
   return (
     <div>
-      <Todo />
+      <IPLTable />
     </div>
   );
 }
