@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS DOM Assignments</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+            transition: 0.3s;
+        }
+
+        .dark {
+            background-color: #121212;
+            color: white;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+
+        .box {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .dynamicDiv {
+            padding: 15px;
+            margin: 10px 0;
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+<h1>JavaScript DOM Assignments</h1>
+
+<!-- 1️⃣ Dark Theme -->
+<h2>1. Dark Theme Toggle</h2>
+<button onclick="toggleTheme()">Toggle Dark Theme</button>
+
+<hr>
+
+<!-- 2️⃣ Div Creation -->
+<h2>2. Dynamic Div Creation</h2>
+<button onclick="createDiv()">Create Div</button>
+<div id="divContainer"></div>
+
+<hr>
+
+<!-- 3️⃣ Hide Show Paragraph -->
+<h2>3. Hide / Show Paragraph</h2>
+<p id="myPara">This is a paragraph. Click button to hide/show me.</p>
+<button onclick="togglePara()">Hide / Show</button>
+
+<hr>
+
+<!-- 4️⃣ Dynamic CSS -->
+<h2>4. Dynamic CSS Change</h2>
+<p id="cssPara">Watch my style change dynamically!</p>
+<button onclick="changeStyle()">Change Style</button>
+
+<script>
+
+    // ==========================
+    // 1️⃣ Dark Theme Toggle
+    // ==========================
+    function toggleTheme() {
+        document.body.classList.toggle("dark");
+    }
+
+
+    // ==========================
+    // 2️⃣ Dynamic Div Creation
+    // ==========================
+    function createDiv() {
+        let newDiv = document.createElement("div");
+        newDiv.innerText = "This is a dynamically created div!";
+        newDiv.className = "dynamicDiv";
+
+        document.getElementById("divContainer").appendChild(newDiv);
+    }
+
+
+    // ==========================
+    // 3️⃣ Hide Show Paragraph
+    // ==========================
+    function togglePara() {
+        let para = document.getElementById("myPara");
+
+        if (para.style.display === "none") {
+            para.style.display = "block";
+        } else {
+            para.style.display = "none";
+        }
+    }
+
+
+    // ==========================
+    // 4️⃣ Dynamic CSS Change
+    // ==========================
+    function changeStyle() {
+        let para = document.getElementById("cssPara");
+
+        para.style.color = "white";
+        para.style.backgroundColor = "purple";
+        para.style.padding = "15px";
+        para.style.fontSize = "20px";
+        para.style.borderRadius = "8px";
+    }
+
+</script>
+
+</body>
+</html>
