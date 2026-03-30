@@ -1,11 +1,19 @@
-import React from "react";
-import IPLTable from "./IPLTable";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Movies from "./pages/Movies";
+import MovieDetails from "./pages/MovieDetails";
+import BookingForm from "./pages/BookingForm";
+import Confirmation from "./pages/Confirmation";
 
 function App() {
   return (
-    <div>
-      <IPLTable />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Movies />} />
+        <Route path="/movie/:id" element={<MovieDetails />} />
+        <Route path="/book" element={<BookingForm />} />
+        <Route path="/confirm" element={<Confirmation />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
